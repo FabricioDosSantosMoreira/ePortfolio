@@ -1,0 +1,15 @@
+📖 Backup Information:
+
+    This Directory Contains A Backup Of Essential Data Files For the Proper Functioning Of 'script.js', 
+    In Case The Workflow 'fetch_data.yml' Fails. If, At Any Point The Workflow 'fetch_data.yml' Fails,
+    These Backup Files Should Be Automatically Loaded to 'script.js' To Restore Functionality.
+
+📑Backup Files:
+
+    - repo_data.json: Contains Data About My GitHub Repositories.
+    - github_color_data.json: Contains GitHub’s Programming Language Color Data.
+
+📅 Last Checked: 
+    
+    05/02/2025 
+    
