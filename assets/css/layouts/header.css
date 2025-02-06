@@ -1,0 +1,172 @@
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 1. Small Displays | Header Styles (Default)                                                                             |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 8% 4%;
+    gap: 36px;
+    
+    background-color: var(--backgroud-opacity-color-rgba);
+}
+
+.header-name {
+    font-family: var(--custom-header-font);
+    font-size: 1.4rem;
+    font-weight: 200;
+    
+    color: var(--secondary-color);
+}
+
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    gap: 12px;
+}
+
+.header__menu-item {
+    position: relative;
+
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 200;
+
+    color: var(--secondary-color);
+}
+
+.header__menu-item.active::after {
+    content: '';
+    position: absolute;
+
+    left: 0; 
+    bottom: -4px; 
+    
+    height: 2px;
+    width: 100%;
+
+    background: var(--primary-color); 
+    border-radius: 2px;
+    animation: fadeInOut 5s infinite ease-in-out;
+}
+
+.header__menu-item:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 2. Medium Displays | Header Styles                                                                                      |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 6% 4%;
+    }
+
+    .header-name {
+        width: 30%;
+
+        font-size: 1.6rem;
+        font-weight: 350;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        width: 70%;
+        gap: 16px;
+    }
+
+    .header__menu-item {
+        font-size: 1.4rem;
+        font-weight: 350;
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 3. Large Displays | Header Styles                                                                                       |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 2% 4%;
+    }
+
+    .header-name {
+        width: 30%;
+
+        font-size: 1.8rem;
+        font-weight: 450;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        width: 70%;
+        gap: 20px;
+    }
+
+    .header__menu-item {
+        font-size: 1.6rem;
+        font-weight: 450;
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 4. Extra Large | Header Styles                                                                                          |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 1024px) { 
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        padding: 2% 4%;
+    }
+
+    .header-name {
+        font-size: 2.0rem;
+        font-weight: 550;
+    }
+
+    .header__menu {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        gap: 24px;
+    }
+
+    .header__menu-item {
+        font-size: 1.8rem;
+        font-weight: 550;
+    }
+}

@@ -1,0 +1,357 @@
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 1. Small Displays | 'curriculum/index.html' Styles (Default)                                                            |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+.curriculum__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 8% 4% 0% 4%;
+    padding: 2% 2% 8% 2%;
+
+    background-color: var(--backgroud-opacity-color-rgba);
+}
+
+.curriculum-title {
+    display: flex;
+    align-items: baseline;
+
+    width: 100%;
+    gap: 6px;
+    
+    color: var(--secondary-color);
+
+    h1 {
+        font-family: var(--custom-title-font);
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+}
+
+.curriculum__languages { grid-area: languages; }
+.curriculum__courses   { grid-area: courses;   }
+.curriculum__degrees   { grid-area: degrees;   }
+.curriculum__profile   { grid-area: profile;   }
+.curriculum__skills    { grid-area: skills;    }
+
+.curriculum__grid {
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "profile"   
+        "degrees" 
+        "courses"
+        "skills"
+        "languages";
+}
+
+.curriculum__grid-item {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 36px;
+
+    color: var(--secondary-color);
+}
+
+.curriculum__item-title {
+    margin-bottom: 12px;
+
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.curriculum__item-container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.curriculum__item-multi-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+.curriculum__design-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 100%;
+    width: 12px;
+}
+
+.curriculum__multi__design-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 150%;
+    width: 12px;
+}
+
+.curriculum-dot {
+    margin-top: 40%;
+
+    border: 5.0px solid var(--primary-color);
+    border-radius: 50%;
+
+    background-color: var(--primary-color);
+}
+
+.curriculum-line {
+    height: 100%;
+    width: 1.5px;
+
+    background-color: var(--light-gray-color);
+}
+
+.curriculum__info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    width: 100%;
+    margin-left: 12px;
+}
+
+.curriculum__info-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.0rem;
+    font-weight: 400;
+
+    color: var(--primary-color);
+}
+
+.curriculum__info-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 12px;
+    max-width: 95%;
+
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 105%;
+
+    color: var(--secondary-color);
+}
+
+.curriculum__info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    max-width: 95%;
+    margin-top: 12px;
+    gap: 12px;
+
+    font-size: 0.8rem;
+    font-weight: 400;
+    word-break: break-all;
+
+    color: var(--secondary-color);
+}
+
+.curriculum__list-item { 
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    img {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+    }
+}
+
+.curriculum__list-item__link {
+    color: var(--secondary-color);
+    text-decoration: none;
+
+    font-family: var(--secondary-font);
+
+    &:hover{
+        color: var(--primary-color);
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 2. Medium Displays | 'curriculum/index.html' Styles                                                                     |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .curriculum-dot {
+        margin-top: 55%;
+    }
+
+    .curriculum__container {
+        margin: 6% 4% 0% 4%;
+        padding: 2% 2% 6% 2%;
+    }
+
+    .curriculum__item-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    .curriculum__info-subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    .curriculum__info-description {
+        font-size: 1.0rem;
+        font-weight: 400;
+        line-height: 110%;
+    }
+    
+    .curriculum__info-list {
+        font-size: 1.0rem;
+        font-weight: 400;
+    }
+
+    .curriculum__list-item { 
+        img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 3. Large Displays | 'curriculum/index.html' Styles                                                                      |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .curriculum-dot {
+        margin-top: 65%;
+    }
+
+    .curriculum__container {
+        margin: 4% 2% 0% 2%;
+        padding: 2% 2% 4% 2%;
+    }
+
+    .curriculum__item-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    
+    .curriculum__info-subtitle {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    .curriculum__info-description {
+        font-size: 1.0rem;
+        font-weight: 400;
+        line-height: 115%;
+    }
+    
+    .curriculum__info-list {
+        font-size: 1.0rem;
+        font-weight: 400;
+    }
+
+    .curriculum__list-item { 
+        img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 4. Extra Large | 'curriculum/index.html' Styles                                                                         |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 1024px) { 
+    .curriculum-dot {
+        margin-top: 70%;
+    }
+
+    .curriculum__container {
+        margin: 4% 2% 0% 2%;
+        padding: 2% 2% 2% 2%;
+    }
+
+    .curriculum-title {
+        width: 100%;
+        gap: 6px;
+        
+        h1 {
+            font-size: 1.0rem;
+            font-weight: 800;
+        }
+    }
+  
+    .curriculum__grid {
+        display: grid;
+        width: 100%;
+    
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        grid-template-areas:
+            "profile courses"
+            "degrees courses"
+            "languages courses"
+            "skills courses";
+    }
+
+    .curriculum__grid-item {
+        margin-top: 36px;
+    }
+    
+    .curriculum__item-title {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .curriculum__info-container {
+        width: 90%;
+    }
+    
+    .curriculum__info-subtitle {
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    
+    .curriculum__info-description {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 120%;
+    }
+    
+    .curriculum__info-list {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    .curriculum__list-item { 
+        gap: 12px;
+    
+        img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}

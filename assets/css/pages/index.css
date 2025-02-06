@@ -1,0 +1,336 @@
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 1. Small Displays | 'index.html' Styles (Default)                                                                       |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+.introduction__container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    margin: 6% 4% 6% 4%;
+    min-height: 60vh;
+}
+
+.introduction__content__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 100%;
+}
+
+.introduction__content__portrait {
+    position: relative; 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 50%;
+
+    margin: 4% 4%;
+}
+
+.introduction__content__profile-title {
+    margin-top: 5%;
+    
+    font-family: var(--primary-font);
+    font-size: 1.0rem;
+    font-weight: 600;
+
+    line-height: 150%;
+    color: var(--secondary-color);
+
+    strong {
+        color: var(--primary-color);
+    }
+}
+
+.introduction__content__profile-description {
+    margin-top: 5%;
+
+    font-family: var(--secondary-font);
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    line-height: 150%;
+    text-align: justify;
+    color: var(--secondary-color);
+}
+
+.introduction__content__profile-networks {
+    display: flex;
+    justify-content: flex-start;
+
+    margin: 15% 0;
+    gap: 12px;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 64px;
+        height: 64px;
+        border-radius: 15%; 
+
+        box-shadow: 6px 6px 4px rgba(183, 2, 255, 0.5);
+        background: linear-gradient(135deg, #FFFFFF, #dadada, #c4c4c4);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    a:hover {
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.10);
+        background: var(--primary-color);
+        filter: brightness(1.2);
+    }
+
+    img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+    }
+}
+
+.introduction__content__portrait-image {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+}
+
+.introduction__content__portrait-top-left-border {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    margin-right: 24px;
+    margin-bottom: 24px;
+
+    border: 1px solid;
+    border-image-slice: 1;
+    border-image-source: conic-gradient(from var(--angle), transparent 25%, var(--gold-color));
+    
+    animation: spin 5s linear infinite;
+
+    z-index: 0;
+}
+
+.introduction__content__portrait-bottom-right-border {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    margin-left: 24px;
+    margin-top: 24px;
+    
+    border: 1px solid;
+    border-image-slice: 1;  
+    border-image-source: conic-gradient(from var(--angle), transparent 25%, var(--gold-color));
+    
+    animation: spin 5s linear infinite; 
+
+    z-index: 0;
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 2. Medium Displays | 'index.html' Styles                                                                                |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .introduction__content__profile-title {
+        margin-top: 5%;
+        
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 160%;
+    }
+    
+    .introduction__content__profile-description {
+        margin-top: 5%;
+
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 160%;
+    }
+    
+    .introduction__content__profile-networks {
+        margin: 10% 0;
+        gap: 16px;
+    }
+    
+    .introduction__content__portrait-top-left-border {
+        margin-right: 36px;
+        margin-bottom: 36px;
+
+        border: 2.5px solid;
+        border-image-slice: 1;
+        border-image-source: conic-gradient(from var(--angle), transparent 25%, var(--gold-color));
+
+        animation: spin 5s linear infinite;
+
+        z-index: 0;
+    }
+
+    .introduction__content__portrait-bottom-right-border {
+        margin-left: 36px;
+        margin-top: 36px;
+
+        border: 2.5px solid;
+        border-image-slice: 1;
+        border-image-source: conic-gradient(from var(--angle), transparent 25%, var(--gold-color));
+
+        animation: spin 5s linear infinite; 
+
+        z-index: 0;
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 3. Large Displays | 'index.html' Styles                                                                                 |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .introduction__content__profile-title {
+        margin-top: 5%;
+        
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 170%;
+    }
+    
+    .introduction__content__profile-description {
+        margin-top: 5%;
+
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 170%;
+    }
+    
+    .introduction__content__profile-networks {
+        margin: 5% 0;
+        gap: 20px;
+    }
+    
+    .introduction__content__portrait-top-left-border {
+        margin-right: 48px;
+        margin-bottom: 48px;
+
+        border: 2.5px solid;
+        border-image-slice: 1;
+        border-image-source: conic-gradient(from var(--angle), transparent 25%, var(--gold-color));
+
+        animation: spin 5s linear infinite;
+
+
+        z-index: 0;
+    }
+
+    .introduction__content__portrait-bottom-right-border {
+        margin-left: 48px;
+        margin-top: 48px;
+
+        border: 2.5px solid;
+        border-image-slice: 1;
+        border-image-source: conic-gradient(from var(--angle), transparent 25%, var(--gold-color));
+
+        animation: spin 5s linear infinite; 
+
+        z-index: 0;
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 4. Extra Large | 'index.html Styles                                                                                     |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 1024px) { 
+    .introduction__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .introduction__content__profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        width: 55%;
+    }
+
+    .introduction__content__portrait {
+        position: relative; 
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 4%;
+        margin-right: 2%;
+        margin-left: 2%;
+
+        width: 25%;
+        height: 25%;
+    }
+
+    .introduction__content__profile-title {
+        margin-top: 2.5%;
+
+        font-size: 1.8rem;
+        font-weight: 800;
+        line-height: 180%;
+    }
+
+    .introduction__content__profile-description {
+        margin-top: 2.5%;
+    
+        font-size: 1.4rem;
+        font-weight: 400;
+
+        line-height: 180%;
+        text-align: justify;
+    }
+
+    .introduction__content__profile-networks {
+        display: flex;
+        
+        margin: 0 0;
+        margin-top: 5%; 
+        gap: 24px;
+    }
+    
+    .introduction__content__portrait-top-left-border {
+        margin-right: 56px;
+        margin-bottom: 56px;
+
+        border: 2.5px solid;
+        border-image-slice: 1;
+        border-image-source: conic-gradient(from var(--angle), transparent 25%, var(--gold-color));
+
+        animation: spin 5s linear infinite;
+
+        z-index: 0;
+    }
+
+    .introduction__content__portrait-bottom-right-border {
+        margin-left: 56px;
+        margin-top: 56px;
+
+        border: 2.5px solid;
+        border-image-slice: 1;
+        border-image-source: conic-gradient(from var(--angle), transparent 25%, var(--gold-color));
+
+        animation: spin 5s linear infinite; 
+
+        z-index: 0;
+    }
+}

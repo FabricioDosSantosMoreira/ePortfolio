@@ -1,0 +1,62 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  /* Font Variables */
+  --custom-header-font: 'Workbench',      serif;
+  --custom-title-font:  'Roboto',         serif;
+  --primary-font:       'Funnel Display', serif;
+  --secondary-font:     'Montserrat',     serif;
+
+  /* Color Variables */
+  --primary-color:    #15F5BA;
+  --secondary-color:  #F0F3FF;
+  --primary-color-hover: #11CE9C;
+  --secondary-color-hover: #d9dbeb;
+
+  --gold-color: #ffd900;
+  --black-color: #353535;
+  --dark-gray-color: #4b4b4b;
+  --light-gray-color: #B6B6B6;
+
+  --backgroud-opacity-color-rgba: rgba(0, 0, 0, 0.4);
+
+  /* Other Variables */
+  --angle: 0deg;
+}
+
+
+/* Properties */
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+
+/* Key Frames */
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }  
+  50% { opacity: 1; }    
+}
+
+@keyframes tremble {
+  0% {
+      transform: rotate(-2.5deg);
+  }
+  100% {
+      transform: rotate(2.5deg);
+  }
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+    to{
+    --angle: 360deg;
+  }
+}

@@ -1,0 +1,50 @@
+.prevent-copy {
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+}
+
+.permit-copy {
+    user-select: auto; 
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto; 
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+/* 'small-dot' and 'small-bar' are used inside the 'curriculum/index.html' */
+.small-dot {
+    border: 4.0px solid var(--primary-color);
+    border-radius: 50%;
+
+    background-color: var(--primary-color);
+}
+
+.small-bar {
+    width: 12px;
+    height: 1px;
+
+    background-color: var(--primary-color);
+}
+
+.small-bar:nth-of-type(2) { 
+    animation: fadeInOut 3s infinite ease-in-out;
+}
+
+.small-bar:nth-of-type(3) { 
+    animation: fadeInOut 3s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.small-bar:nth-of-type(4) {  
+    animation: fadeInOut 3s infinite ease-in-out;
+    animation-delay: 1s;
+}

@@ -1,0 +1,412 @@
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 1. Small Displays | 'projects/index.html' Styles (Default)                                                              |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+  
+.gallery__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 10% 8% 10% 8%;
+}
+
+.gallery__projects {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    gap: 64px;
+
+    grid-template-columns: 1fr;
+}
+
+.gallery__project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative; 
+
+    width: 100%;
+    height: 100%;
+}
+ 
+.gallery__border--top-right {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    
+    margin-left: 7.5%;
+    margin-top: -7.5%;
+  
+    border: 2.5px solid var(--secondary-color);
+    border-top-right-radius: 12px;
+    border-image-slice: 1;
+    border-image-source: conic-gradient(from var(--angle), transparent 50%, var(--secondary-color));
+    
+    animation: spin 5s linear infinite;
+
+    z-index: 0;
+}
+
+.gallery__border--bottom-left {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    
+    margin-left: -7.5%;
+    margin-top: 7.5%;
+
+    border: 2.5px solid var(--secondary-color);
+    border-bottom-left-radius: 12px;
+    border-image-slice: 1;
+    border-image-source: conic-gradient(from var(--angle), transparent 50%, var(--secondary-color));
+
+    animation: spin 5s linear infinite;
+    
+    z-index: 0;
+}
+
+.gallery__card--colored-bar {
+    display: flex;
+
+    min-height: 16px;
+    width: 100%;
+
+    margin-top: -6px;
+
+    background-color: #757575;
+
+    div {
+        min-height: 16px;
+        width: 101%;
+        max-width: 101%;;
+    }
+}
+
+.gallery__card--colored-dot {
+    height: 16px;
+    width: 16px;
+
+    border-radius: 50%;
+
+    background-color: var(--light-gray-color);
+}
+
+.gallery__card-info {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.gallery__card-info__language {
+    display: flex;
+    align-items: center;
+
+    max-width: 60%;
+    
+    position: absolute;
+    top: 0;
+    
+    padding-left: 10px;
+    word-break: break-all;
+
+    span {
+        padding-left: 6px;
+
+        font-family: var(--secondary-font);
+        font-size: 0.6rem;
+        font-weight: 600;
+        
+        color: var(--black-color);
+    }
+}
+
+.gallery__card-info__stats {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.gallery__card-info__stats-item {
+    display: flex;
+    align-items: center;
+
+    padding: 2px 10px;
+
+    img {
+        width: 12px;
+        height: 12px;
+    }
+
+    span {
+        padding-left: 8px;
+
+        font-family: var(--secondary-font);
+        font-size: 0.8rem;
+        font-weight: 600;
+
+        color: var(--black-color);
+    }
+}
+
+.gallery__card-info__stats-item--star {
+    background-color: #ffe600;
+}
+
+.gallery__card-info__stats-item--eye {
+    background-color: #a867d4;
+}
+
+.gallery__card-info__stats-item--fork {
+    background-color: #888780;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 100%;
+    width: 100%;
+    min-height: fit-content;
+    
+    border: 2.5px solid var(--secondary-color);
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    
+    overflow: hidden;
+    word-break: normal;
+
+    background-color: var(--secondary-color);
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    z-index: 1;
+} 
+
+.card__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__title__info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 12px;
+    
+    text-decoration: none;
+
+    span {
+        padding-left: 6px;
+
+        font-family: var(--primary-font);
+        font-size: 1.2rem;
+        font-weight: 600;
+
+        color: var(--dark-gray-color);
+    }
+
+    img {
+        max-width: 16px;
+        max-height: 16px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--secondary-color-hover);
+    }
+}
+
+
+.card__title__homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+
+        animation: tremble 0.5s ease-in-out infinite alternate;
+    }
+
+    &:hover{
+        cursor: pointer;
+        background-color: var(--secondary-color-hover);
+    }
+}
+
+.card__description {
+    display: flex;
+    align-items: flex-start;
+
+    min-height: 10%;
+    width: 90%;
+    margin: 4px 0 36px 12px;
+
+    p { 
+        font-family: var(--secondary-font);
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 110%;
+
+        color: var(--dark-gray-color);
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 2. Medium Displays | 'projects/index.html' Styles                                                                       |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .gallery__container {
+        margin: 8% 6% 8% 6%;
+    }
+
+    .gallery__projects {
+        justify-content: center;
+        align-items: center;
+
+        gap: 72px;
+
+        grid-template-columns: repeat(auto-fit, minmax(284px, 384px));
+    }
+
+    .gallery__card-info__language {
+        span {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+
+    .card__title__info {
+        span {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+    
+    .card__description {
+        p { 
+            font-size: 1.0rem;
+            font-weight: 400;
+            line-height: 115%;
+        }
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 3. Large Displays | 'projects/index.html' Styles                                                                        |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .gallery__container {
+        margin: 6% 4% 6% 4%;
+    }
+
+    .gallery__projects {
+        justify-content: center;
+        align-items: center;
+
+        gap: 84px;
+
+        grid-template-columns: repeat(auto-fit, minmax(284px, 384px));
+    }
+
+    .gallery__card-info__language {
+        span {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+    }
+
+    .card__title__info {
+        span {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+    
+    .card__description {
+        p { 
+            font-size: 1.0rem;
+            font-weight: 400;
+            line-height: 120%;
+        }
+    }
+}
+
+
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+/* | 4. Extra Large | 'projects/index.html' Styles                                                                           |*/
+/* +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+*/
+
+@media (min-width: 1024px) {
+    .gallery__container {
+        margin: 4% 2% 4% 2%;
+    }
+
+    .gallery__projects {
+        justify-content: center;
+        align-items: center;
+        
+        gap: 96px;
+
+        grid-template-columns: repeat(auto-fit, minmax(384px, 484px));
+    }
+
+    .gallery__card-info__language {
+        span {
+            font-size: 1.0rem;
+            font-weight: 600;
+        }
+    }
+
+    .card__title__info {
+        span {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+    
+    .card__description {
+        p { 
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 125%;
+        }
+    }
+}

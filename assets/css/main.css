@@ -1,0 +1,56 @@
+/* Importing Base Styles */
+@import url('./base/reset.css');
+@import url('./base/utilities.css');
+@import url('./base/variables.css');
+
+/* Importing Layouts Styles */
+@import url('./layouts/header.css');
+@import url('./layouts/footer.css');
+@import url('./layouts/scrollbar.css');
+
+/* Importing Pages Styles */
+@import url('./pages/index.css');
+@import url('./pages/about.css');
+@import url('./pages/projects.css');
+@import url('./pages/curriculum.css');
+
+html, body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+body::before {
+    content: '';
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-image: url('../utils/img/backgroud.png');
+    z-index: -1; 
+}   
+
+body::after {
+    content: '';
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    min-width: 100%;
+    min-height: 100%;
+
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    z-index: -1; 
+}
