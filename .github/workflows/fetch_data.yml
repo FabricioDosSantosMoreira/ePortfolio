@@ -11,7 +11,7 @@ jobs:
   fetch-data:
     runs-on: ubuntu-latest
     env:
-      PORTFOLIO_PUSH_AND_API_ACCESS_TOKEN: ${{ secrets.PORTFOLIO_PUSH_AND_API_ACCESS_TOKEN }}
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
     steps:
       - name: Check Out Repository
@@ -68,7 +68,7 @@ jobs:
             "alura-challenge-amigo-secreto"
           )
 
-          RESPONSE=$(curl -X POST -H "Authorization: Bearer $PORTFOLIO_PUSH_AND_API_ACCESS_TOKEN" \
+          RESPONSE=$(curl -X POST -H "Authorization: Bearer $ACCESS_TOKEN" \
             -H "Content-Type: application/json" \
             -d "{\"query\": \"{ user(login: \\\"$OWNER\\\") { repositories(first: 100) { nodes { name } } } }\"}" \
             https://api.github.com/graphql
@@ -83,7 +83,7 @@ jobs:
           # Iterates over the repositories and compares with the excluded list
           for NAME in "${REPO_NAMES[@]}"; do
             if [[ ! " ${EXCLUDED_REPOS[@]} " =~ " ${NAME} " ]]; then
-              RESPONSE=$(curl -X POST -H "Authorization: Bearer $PORTFOLIO_PUSH_AND_API_ACCESS_TOKEN" \
+              RESPONSE=$(curl -X POST -H "Authorization: Bearer $ACCESS_TOKEN" \
                 -H "Content-Type: application/json" \
                 -d "{\"query\": \"{ repository(owner: \\\"$OWNER\\\", name: \\\"$NAME\\\") { name description url homepageUrl openGraphImageUrl stargazers { totalCount } forks { totalCount } watchers { totalCount } languages(first: 100) { edges { node { name } size } } } }\"}" \
                 https://api.github.com/graphql
