@@ -51,8 +51,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         '../../data/backup/repo_data.json'
     );
 
-    let currentPage = window.location.pathname.split('/')[2];
-    if (currentPage === 'projects') {
+    let paths = window.location.pathname.split('/');
+
+    if (paths.includes('projects')) {
         const tag = document.getElementById('projects');
         buildRepoInfoAndRender(tag);
     }
