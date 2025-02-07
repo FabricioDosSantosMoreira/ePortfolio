@@ -411,8 +411,8 @@
   "name": "Portfolio",
   "description": "My Personal Portfolio ",
   "url": "https://github.com/FabricioDosSantosMoreira/Portfolio",
-  "homepageUrl": null,
-  "openGraphImageUrl": "https://opengraph.githubassets.com/278c3eda8309437401e8ab6d67a6e455685078b8e4f68f9a3f30052e7764d5de/FabricioDosSantosMoreira/Portfolio",
+  "homepageUrl": "",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/7e62a41d7944a5cf8e5e83277b437ebc35387028f9071fb096332c1c8c758b0d/FabricioDosSantosMoreira/Portfolio",
   "stargazers": {
     "totalCount": 0
   },
@@ -423,26 +423,7 @@
     "totalCount": 1
   },
   "languages": {
-    "edges": [
-      {
-        "node": {
-          "name": "CSS"
-        },
-        "size": 41894
-      },
-      {
-        "node": {
-          "name": "JavaScript"
-        },
-        "size": 13270
-      },
-      {
-        "node": {
-          "name": "HTML"
-        },
-        "size": 47716
-      }
-    ]
+    "edges": []
   }
 }
 
