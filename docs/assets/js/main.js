@@ -55,11 +55,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     if (paths.includes('projects')) {
         const tag = document.getElementById('projects');
-        buildRepoInfoAndRender(tag);
+        await buildRepoInfoAndRender(tag);
     }
-
-    }
-);
+});
 
 
 async function fetchDataOrFallbackData(path, fallbackPath) {
