@@ -141,7 +141,10 @@ function renderRepositoryInfo(tag, repositoryInfo) {
 
     // Adding previously built divs to the card.
     cardDiv.innerHTML = `
-        <img class="card__image" src="${repositoryInfo.openGraphImageUrl}" alt="Repository Preview Image"></img>
+
+        <div class="card__image">
+            <img src="${repositoryInfo.openGraphImageUrl}" alt="Repository Preview Image"></img>
+        </div>
 
         ${colorsDiv.outerHTML}
 
@@ -156,8 +159,6 @@ function renderRepositoryInfo(tag, repositoryInfo) {
         <div class="card__description">
             <p>${repositoryInfo.description || "Sem descrição"}</p>
         </div>
-       
-        <a href="${repositoryInfo.url}"></a>
 
         ${statsDiv.outerHTML}
     `;
