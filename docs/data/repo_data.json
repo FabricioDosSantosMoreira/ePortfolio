@@ -409,10 +409,10 @@
 ,
 {
   "name": "Portfolio",
-  "description": "My Personal Portfolio ",
+  "description": "📑 My Personal Portfolio",
   "url": "https://github.com/FabricioDosSantosMoreira/Portfolio",
   "homepageUrl": "https://fabriciodossantosmoreira.github.io/Portfolio/",
-  "openGraphImageUrl": "https://opengraph.githubassets.com/98bc97ea33deab9c0daf03e0b9541e59eb26c13583f51394e3321f79cec15a01/FabricioDosSantosMoreira/Portfolio",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/441e815b0bfb14326919e81f549fa3e9491ddc990d4a2c4eadc2a22a518a4066/FabricioDosSantosMoreira/Portfolio",
   "stargazers": {
     "totalCount": 1
   },
