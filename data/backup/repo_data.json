@@ -323,7 +323,7 @@
           "node": {
             "name": "TypeScript"
           },
-          "size": 9853
+          "size": 9875
         },
         {
           "node": {
@@ -409,12 +409,12 @@
   ,
   {
     "name": "Portfolio",
-    "description": "My Personal Portfolio ⭐",
+    "description": "My Personal Portfolio ",
     "url": "https://github.com/FabricioDosSantosMoreira/Portfolio",
-    "homepageUrl": "https://portfolio-fabricio-dos-santos-moreira.vercel.app",
-    "openGraphImageUrl": "https://opengraph.githubassets.com/501cec8559933e4a5f606625432e790feabb2de219c227b5c3f9752cc7c854f7/FabricioDosSantosMoreira/Portfolio",
+    "homepageUrl": null,
+    "openGraphImageUrl": "https://opengraph.githubassets.com/e32ec09762c32c988596f473cec00149733210a1c0a15101124f2ba22082f393/FabricioDosSantosMoreira/Portfolio",
     "stargazers": {
-      "totalCount": 1
+      "totalCount": 0
     },
     "forks": {
       "totalCount": 0
@@ -426,24 +426,23 @@
       "edges": [
         {
           "node": {
-            "name": "HTML"
-          },
-          "size": 46209
-        },
-        {
-          "node": {
             "name": "CSS"
           },
-          "size": 36694
+          "size": 41905
         },
         {
           "node": {
             "name": "JavaScript"
           },
-          "size": 11045
+          "size": 13272
+        },
+        {
+          "node": {
+            "name": "HTML"
+          },
+          "size": 47722
         }
       ]
     }
   }
 ]
-  
