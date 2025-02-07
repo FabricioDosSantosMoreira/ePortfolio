@@ -33,8 +33,8 @@ jobs:
           echo "Clearing Old Data Files..."
 
           # Remove Old Data Files
-          rm -f "./data/repo_data.json"
-          rm -f "./data/github_color_data.json"
+          rm -f "./docs/data/repo_data.json"
+          rm -f "./docs/data/github_color_data.json"
 
           echo "Old Data Files Cleared!"
 
@@ -46,10 +46,10 @@ jobs:
           _datetime=$(TZ="UTC" date +"%d/%m/%Y %H:%M") 
 
           # Commit and Push Changes
-          git add './data/github_color_data.json'
+          git add './docs/data/github_color_data.json'
           git commit --allow-empty -m "[REMOVE] - github_color_data.json ($_datetime)"
         
-          git add './data/repo_data.json'
+          git add './docs/data/repo_data.json'
           git commit --allow-empty -m "[REMOVE] - repo_data.json ($_datetime)"
       
           git pull
@@ -78,7 +78,7 @@ jobs:
           REPO_NAMES=($(echo "$RESPONSE" | jq -r '.data.user.repositories.nodes[].name'))
 
           # Open 'repo_data.json' with a '['
-          echo "[" > "./data/repo_data.json"
+          echo "[" > "./docs/data/repo_data.json"
 
           # Iterates over the repositories and compares with the excluded list
           for NAME in "${REPO_NAMES[@]}"; do
@@ -90,18 +90,18 @@ jobs:
               )
 
               # Adds 'RESPONSE' to 'repo_data.json'
-              echo "$RESPONSE" | jq ".data.repository" >> "./data/repo_data.json"
+              echo "$RESPONSE" | jq ".data.repository" >> "./docs/data/repo_data.json"
                   
               # Adds a ',' to 'repo_data.json' to separate objects
-              echo "," >> "./data/repo_data.json"
+              echo "," >> "./docs/data/repo_data.json"
             else
               echo "Skipped Repository: $NAME"
             fi
           done
 
           # Removes the last ',' and closes 'repo_data.json' with a ']'
-          sed -i '$ s/,$//' "./data/repo_data.json"
-          echo "]" >> "./data/repo_data.json"
+          sed -i '$ s/,$//' "./docs/data/repo_data.json"
+          echo "]" >> "./docs/data/repo_data.json"
 
           echo "GitHub Repository Data Fetched!"
 
@@ -110,7 +110,7 @@ jobs:
           echo "Fetching GitHub Colors JSON..."
 
           # NOTE: Repository Containing GitHub's Programming Languages Colors JSON.
-          if curl -f -o "./data/github_color_data.json" https://raw.githubusercontent.com/ozh/github-colors/master/colors.json; then
+          if curl -f -o "./docs/data/github_color_data.json" https://raw.githubusercontent.com/ozh/github-colors/master/colors.json; then
             echo "GitHub Colors JSON Fetched!"
           else
             echo "Failed to Fetch GitHub Colors JSON!"
@@ -120,13 +120,13 @@ jobs:
         run: |
           echo "Verifying Data Files..."
 
-          if [ -f "./data/repo_data.json" ]; then
+          if [ -f "./docs/data/repo_data.json" ]; then
             echo "Repository Data File Verified!"
           else
             echo "Repository Data File Not Found!"
           fi
 
-          if [ -f "./data/github_color_data.json" ]; then
+          if [ -f "./docs/data/github_color_data.json" ]; then
             echo "GitHub Color Data File Verified!"
           else
             echo "GitHub Color Data File Not Found!"
@@ -142,13 +142,14 @@ jobs:
           _datetime=$(TZ="UTC" date +"%d/%m/%Y %H:%M") 
 
           # Commit and Push Data
-          git add "./data/repo_data.json"
+          git add "./docs/data/repo_data.json"
           git commit --allow-empty -m "[UPDATE] - repo_data.json ($_datetime)"
 
-          git add "./data/github_color_data.json"
+          git add "./docs/data/github_color_data.json"
           git commit --allow-empty -m "[UPDATE] - github_color_data.json ($_datetime)"
 
           git pull
           git push
 
           echo "Data Committed and Pushed!"
+          
