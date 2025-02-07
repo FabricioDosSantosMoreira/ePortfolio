@@ -42,6 +42,8 @@ let repoInfo;
 
 
 document.addEventListener('DOMContentLoaded', async function () {
+    console.log('preparando');
+
     colorInfo = await fetchDataOrFallbackData(
         '../../data/github_color_data.json',
         '../../data/backup/github_color_data.json'
@@ -53,7 +55,11 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     let paths = window.location.pathname.split('/');
 
+    console.log(paths);
+    console.log(paths.includes('projects'));
     if (paths.includes('projects')) {
+        console.log('construindo');
+
         const tag = document.getElementById('projects');
         await buildRepoInfoAndRender(tag);
     }
@@ -80,8 +86,11 @@ async function fetchDataOrFallbackData(path, fallbackPath) {
 
 async function buildRepoInfoAndRender(tag) {
     let defaultSocialImagePath = '../../assets/utils/img/github-logo.png';
- 
+    
+    console.log('entrei no build');
     for (let info of repoInfo) {
+        console.log('entrei no repo' + ' ' + info.name);
+
         // Get the most used language and the color for it.        
         info.mostUsedLanguageName = getMostUsedLanguageName(info.languages);
         info.mostUsedLanguageColor = getLanguageColor(info.mostUsedLanguageName);
@@ -98,6 +107,8 @@ async function buildRepoInfoAndRender(tag) {
 
 
 function renderRepositoryInfo(tag, repositoryInfo) {
+
+    console.log('renderizando');
 
     // Build a container div.
     const containerDiv = document.createElement('div');
