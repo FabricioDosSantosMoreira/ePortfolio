@@ -377,10 +377,14 @@ function getUsedLanguagesNameAndPercentage(languages) {
 
 function formatRepoName(string) {
     let splittedString = string.split('-');
-    let newString = '';
+   
+    if (splittedString.length == 1) {
+        return splittedString[0];
+    }
 
     // Removes any '-' and adds a ' ' from a string. 
     // Also set the first word letter as upper case.
+    let newString = '';
     for (let i = 0; i < splittedString.length; i++) {
         splittedString[i] = splittedString[i][0].toUpperCase() + splittedString[i].slice(1);
 
