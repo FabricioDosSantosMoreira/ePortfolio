@@ -1,0 +1,430 @@
+[
+{
+  "name": "DIO.me",
+  "description": "Coleção de códigos dos bootcamps, cursos e projetos que realizei na plataforma da Digital Innovation One.",
+  "url": "https://github.com/FabricioDosSantosMoreira/DIO.me",
+  "homepageUrl": "https://www.dio.me/users/fabriciosantosmoreira",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/85c825aebcaef9a0bfdaf2f26c07bb4d08e3561b9f956982e4aaaf57df680c07/FabricioDosSantosMoreira/DIO.me",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Makefile"
+        },
+        "size": 513
+      },
+      {
+        "node": {
+          "name": "Python"
+        },
+        "size": 209248
+      },
+      {
+        "node": {
+          "name": "Mako"
+        },
+        "size": 635
+      },
+      {
+        "node": {
+          "name": "Java"
+        },
+        "size": 273019
+      },
+      {
+        "node": {
+          "name": "C#"
+        },
+        "size": 129892
+      },
+      {
+        "node": {
+          "name": "TSQL"
+        },
+        "size": 103625
+      },
+      {
+        "node": {
+          "name": "HTML"
+        },
+        "size": 19223
+      },
+      {
+        "node": {
+          "name": "JavaScript"
+        },
+        "size": 72734
+      },
+      {
+        "node": {
+          "name": "TypeScript"
+        },
+        "size": 30507
+      },
+      {
+        "node": {
+          "name": "CSS"
+        },
+        "size": 1833
+      },
+      {
+        "node": {
+          "name": "Jupyter Notebook"
+        },
+        "size": 8722777
+      },
+      {
+        "node": {
+          "name": "Scilab"
+        },
+        "size": 1719
+      },
+      {
+        "node": {
+          "name": "R"
+        },
+        "size": 1933
+      }
+    ]
+  }
+}
+,
+{
+  "name": "XPe-Python-Bootcamp",
+  "description": "Coleção de códigos que realizei no Bootcamp Desenvolverdor(a) Python da XPe",
+  "url": "https://github.com/FabricioDosSantosMoreira/XPe-Python-Bootcamp",
+  "homepageUrl": "",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/2dc429a6e46bb2a202a5d7649e36b557edbc2635785c6887d10682416546df78/FabricioDosSantosMoreira/XPe-Python-Bootcamp",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Python"
+        },
+        "size": 121339
+      },
+      {
+        "node": {
+          "name": "HTML"
+        },
+        "size": 23299
+      },
+      {
+        "node": {
+          "name": "CSS"
+        },
+        "size": 1100
+      },
+      {
+        "node": {
+          "name": "Makefile"
+        },
+        "size": 861
+      }
+    ]
+  }
+}
+,
+{
+  "name": "PyQT5-Basic-Examples",
+  "description": "A collection of basic implementations using PyQT5",
+  "url": "https://github.com/FabricioDosSantosMoreira/PyQT5-Basic-Examples",
+  "homepageUrl": "",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/5ee0ef4cd580a00d3df85b0271d7cd240523536b647e3e58c5cb711a8ae247c5/FabricioDosSantosMoreira/PyQT5-Basic-Examples",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Python"
+        },
+        "size": 57641
+      }
+    ]
+  }
+}
+,
+{
+  "name": "TicTacToe",
+  "description": "TicTacToe in Python with PyGame's library",
+  "url": "https://github.com/FabricioDosSantosMoreira/TicTacToe",
+  "homepageUrl": "",
+  "openGraphImageUrl": "https://repository-images.githubusercontent.com/843588811/c44958c1-e269-41e9-afd7-02a137e184f3",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Python"
+        },
+        "size": 29743
+      }
+    ]
+  }
+}
+,
+{
+  "name": "ReNam",
+  "description": "ReNam is a file renamer for movies, animes and tv shows",
+  "url": "https://github.com/FabricioDosSantosMoreira/ReNam",
+  "homepageUrl": "",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/1456b7f516e2432b1c596ee6c4bdfcacf1e040e4f0472a5e063e7491b7a8d107/FabricioDosSantosMoreira/ReNam",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Python"
+        },
+        "size": 67495
+      }
+    ]
+  }
+}
+,
+{
+  "name": "LeetCode-Solutions",
+  "description": "My LeetCode Solutions",
+  "url": "https://github.com/FabricioDosSantosMoreira/LeetCode-Solutions",
+  "homepageUrl": "",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/600558f53afde8e62012a42a4dbc1ca2015013a1ee3da15380d7406eec9d0596/FabricioDosSantosMoreira/LeetCode-Solutions",
+  "stargazers": {
+    "totalCount": 2
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Python"
+        },
+        "size": 13021
+      }
+    ]
+  }
+}
+,
+{
+  "name": "SENAI-projeto-django",
+  "description": "Projeto aplicado pelo SENAI sobre Gerenciamento de EPI's com Django",
+  "url": "https://github.com/FabricioDosSantosMoreira/SENAI-projeto-django",
+  "homepageUrl": "",
+  "openGraphImageUrl": "https://repository-images.githubusercontent.com/857449662/19836f5e-c12e-4760-9b58-c5f9913aeee2",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 2
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Python"
+        },
+        "size": 66843
+      },
+      {
+        "node": {
+          "name": "CSS"
+        },
+        "size": 19917
+      },
+      {
+        "node": {
+          "name": "HTML"
+        },
+        "size": 61178
+      },
+      {
+        "node": {
+          "name": "JavaScript"
+        },
+        "size": 2938
+      }
+    ]
+  }
+}
+,
+{
+  "name": "react-web-calculator",
+  "description": "A simple web-based calculator built with React, MathJS, TypeScript & Styled Components",
+  "url": "https://github.com/FabricioDosSantosMoreira/react-web-calculator",
+  "homepageUrl": "https://simple-web-based-calculator.vercel.app/",
+  "openGraphImageUrl": "https://repository-images.githubusercontent.com/860985296/832578e5-d86b-46bd-8de7-e6125d1c52e0",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "HTML"
+        },
+        "size": 736
+      },
+      {
+        "node": {
+          "name": "TypeScript"
+        },
+        "size": 9875
+      },
+      {
+        "node": {
+          "name": "JavaScript"
+        },
+        "size": 1173
+      }
+    ]
+  }
+}
+,
+{
+  "name": "SENAI-desafio-saep",
+  "description": "Desafio SAEP aplicado pelo SENAI",
+  "url": "https://github.com/FabricioDosSantosMoreira/SENAI-desafio-saep",
+  "homepageUrl": "",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/e0bf363e25a147a02e871df600b33f7ba2931885b800eb0e57de6c72bafa5ec8/FabricioDosSantosMoreira/SENAI-desafio-saep",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Python"
+        },
+        "size": 9472
+      },
+      {
+        "node": {
+          "name": "CSS"
+        },
+        "size": 5784
+      },
+      {
+        "node": {
+          "name": "JavaScript"
+        },
+        "size": 1177
+      },
+      {
+        "node": {
+          "name": "HTML"
+        },
+        "size": 14159
+      }
+    ]
+  }
+}
+,
+{
+  "name": "PlanetsVsGalaxiesClassifier",
+  "description": "A Machine Learning Project to Classify Images of Planets and Galaxies. 🪐",
+  "url": "https://github.com/FabricioDosSantosMoreira/PlanetsVsGalaxiesClassifier",
+  "homepageUrl": "https://colab.research.google.com/drive/13vwkcfclhUynVIVa8Grw3FJCq8bMJOOS?usp=sharing",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/5b2a2ac58500becfa6ad7ecef651d74ec24e0dc7b8642b63ef5a77feaa1ebea2/FabricioDosSantosMoreira/PlanetsVsGalaxiesClassifier",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": [
+      {
+        "node": {
+          "name": "Jupyter Notebook"
+        },
+        "size": 1106477
+      }
+    ]
+  }
+}
+,
+{
+  "name": "ePortfolio",
+  "description": "📑 My Personal ePortfolio",
+  "url": "https://github.com/FabricioDosSantosMoreira/ePortfolio",
+  "homepageUrl": "https://fabriciodossantosmoreira.github.io/ePortfolio/",
+  "openGraphImageUrl": "https://opengraph.githubassets.com/1488a001f7effaa235aed568625e4a70fc1a7c77462974a8dec04bad5ff7034c/FabricioDosSantosMoreira/ePortfolio",
+  "stargazers": {
+    "totalCount": 1
+  },
+  "forks": {
+    "totalCount": 0
+  },
+  "watchers": {
+    "totalCount": 1
+  },
+  "languages": {
+    "edges": []
+  }
+}
+
+]
